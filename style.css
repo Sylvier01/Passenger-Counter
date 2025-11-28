@@ -41,9 +41,17 @@ body{
     margin-bottom: 5px;
     border-radius: 5px;
 }
+#reset-entries-btn{
+    color: black;
+    font-weight: bold;
+    width: fit-content;
+    padding: 10px;
+    background: rgba(0, 85, 100, 0.5);
+}
 p{
     font-size: 1rem;
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 #increment-btn {
