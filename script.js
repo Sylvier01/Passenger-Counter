@@ -1,8 +1,7 @@
-// document.getElementById("counter").innerText = 0;
-
 let count = 0;
 let countEl = document.getElementById("count-el");
 let saveEl = document.getElementById("save-el");
+let resetEntriesBtn = document.getElementById("reset-entries-btn");
 
 function increment (){
     count += 1;
@@ -10,29 +9,13 @@ function increment (){
 }
 
 function save(){
-    let content = count + " - ";
-    saveEl.textContent += content;
+    let entrieDetails = count + " - ";
+    saveEl.textContent = saveEl.textContent + entrieDetails;
     countEl.textContent = 0;    
     count = 0;
 }
 
+function resetEntries(){
+    saveEl.textContent = "Previous Entries:";
+}
 
-
-/* let name = "Sylvia";
-let greeting = "Hi, my name is";
-let myGreeting = greeting + " " + name;
-console.log(myGreeting);
-*/
-
-/*
-let welcomeEl = document.getElementById("welcome-el");
-
-let name = "Sylvia!";
-let greeting = "Welcome back, ";
-
-let welcomeMsg = greeting + name;
-welcomeEl.innerText = welcomeMsg;
-
-// add emoji
-welcomeEl.innerText += "👋";
-*/
